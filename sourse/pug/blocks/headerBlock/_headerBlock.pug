@@ -1,10 +1,32 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
+	+b.headerBlock.section.bg-wrap#headerBlock&attributes(attributes)
+		+pic('first-screen-bg.jpg', 'bg')(class="picture-bg")
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+			+e.wrap
+				+e.txt-block
+					h1
+						+e.big РЕМОНТ И&nbsp;ПРОКАТ
+						+e.small ЭЛЕКТРО / БЕНЗО
+						+e.white ИНСТРУМЕНТА
+				+form()
 	// end headerBlock
+
+mixin form()
+	+b.form
+		+form-wrap()
+			+e.headline Оставьте заявку
+			+e.inner-cont
+				+e.txt на бесплатную консультацию специалиста по телефону
+				+e.input-wrap.form-group
+					label
+						+e.INPUT.input.form-control(type='text' placeholder='Ваше имя'  name='name' required)
+						+e.icon-img
+							img(src="img/@2x/icon-man.png" alt="")
+				+e.input-wrap.form-group
+					label
+						+e.INPUT.input.form-control(type='tel'  placeholder="Ваш телефон" name='tel' required)
+						+e.icon-img
+							img(src="img/@2x/icon-phone.png" alt="")
+				+e.BUTTON.btn(type='submit') Отправить
+				+e.warranty Гарантируем конфиденциальность

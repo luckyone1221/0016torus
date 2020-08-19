@@ -39,7 +39,7 @@ var JSCCommon = {
 		$.fancybox.defaults.backFocus = false;
 		var linkModal = document.querySelectorAll('.link-modal');
 
-		if (linkModal) {
+		function addData() {
 			linkModal.forEach(function (element) {
 				element.addEventListener('click', function () {
 					var modal = document.querySelector(element.getAttribute("href"));
@@ -48,8 +48,7 @@ var JSCCommon = {
 					function setValue(val, elem) {
 						if (elem && val) {
 							var el = modal.querySelector(elem);
-							el.tagName == "INPUT" ? el.value = val : el.innerHTML = val;
-							console.log(modal.querySelector(elem).tagName);
+							el.tagName == "INPUT" ? el.value = val : el.innerHTML = val; // console.log(modal.querySelector(elem).tagName)
 						}
 					}
 
@@ -60,6 +59,8 @@ var JSCCommon = {
 				});
 			});
 		}
+
+		if (linkModal) addData();
 	},
 	// /modalCall
 	toggleMenu: function toggleMenu() {
@@ -184,6 +185,7 @@ var JSCCommon = {
 				type: 'POST',
 				data: data
 			}).done(function (data) {
+				console.log('success');
 				$.fancybox.close();
 				$.fancybox.open({
 					src: '#modal-thanks',
@@ -196,7 +198,9 @@ var JSCCommon = {
 					// ym(53383120, 'reachGoal', 'zakaz');
 					// yaCounter55828534.reachGoal('zakaz');
 				}, 4000);
-			}).fail(function () {});
+			}).fail(function () {
+				console.log('something went wrong');
+			});
 		});
 	},
 	heightwindow: function heightwindow() {
@@ -240,7 +244,8 @@ function eventHandler() {
 	JSCCommon.animateScroll(); // JSCCommon.CustomInputFile();
 	// добавляет подложку для pixel perfect
 
-	var screenName = 'main.jpg';
+	var screenName;
+	screenName = 'main.jpg';
 	screenName ? $(".main-wrapper").after("<div class=\"pixel-perfect\" style=\"background-image: url(screen/".concat(screenName, ");\"></div>")) : ''; // /добавляет подложку для pixel perfect
 
 	function whenResize() {
@@ -279,7 +284,7 @@ function eventHandler() {
 		// }
 
 	}), _defaultSl);
-	var swiper4 = new Swiper('.color-slider', _objectSpread(_objectSpread({}, defaultSl), {}, {
+	var swiper4 = new Swiper('.sBanners__slider--js', _objectSpread(_objectSpread({}, defaultSl), {}, {
 		slidesPerView: 'auto',
 		freeMode: true,
 		loopFillGroupWithBlank: true,
@@ -287,6 +292,10 @@ function eventHandler() {
 		slideToClickedSlide: true,
 		freeModeMomentum: true
 	})); // modal window
+	//luckyoneJs
+	//footer year
+
+	$('.year-js').html(new Date().getFullYear()); //end luckyoneJs
 }
 
 ;

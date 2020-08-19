@@ -21,7 +21,33 @@ mixin mob-mnu()
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy
+		+e.bg
+			img(src='img/@2x/bg-grid.jpg' alt='')
 		.container
-			+mnu()
+			+e.row.row
+				.col-auto.col-xl-6
+					+e.logo-block
+						+e.A.logo(href='/')
+							img(src="img/@2x/logo.png" alt="")
+						+e.logo-txt.d-none.d-lg-block
+							| Авторизованный сервисный
+							|
+							br
+							| центр 220 вольт
+					+e.lower-txt.d-none.d-lg-block Ремонт сварочного оборудования и электро/бензо инструмента
+				+e.right-col.col.col-xl-6
+					+e.shedule-bl.d-none.d-md-block
+						+e.address Пристанский пер. 5г
+						+e.shedule ПН-ПТ с 9.00 до 18.00
+					+e.contacts
+						+e.links.d-none.d-sm-block
+							+e.A.phone(href='tel:+73833630011') +7 (383) 363-00-11
+							+e.A.mail(href="mailto:Torus-service@mail.ru") Torus-service@mail.ru
+						+e.A.callback-btn.link-modal(href="#modal-call")
+							+icon('phone')
+							span Обратный звонок
+
+
+			//-+mnu()
 					
 	// end top-nav

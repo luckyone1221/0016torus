@@ -25,178 +25,437 @@
 	</head>
 	<body><!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
 		<div class="main-wrapper">
-			<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
-			</div>
-			<div class="menu-mobile menu-mobile--js d-lg-none">
-				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-				</div>
-				<div class="menu-mobile__inner">
-					<ul class="menu-mobile__nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="/" itemprop="url">Главная</a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Услуги  </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Подбор септика   </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url">Акции </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> О компании  </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Доставка и оплата </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Клиентам  </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#" itemprop="url"> Наши работы   </a>
-						</li>
-						<li class="menu-mobile__item" itemprop="item"><a class="menu-mobile__link" href="#sContact" itemprop="url">Контакты </a>
-						</li>
-					</ul>
-					<div class="text-right"></div>
-				</div>
-			</div>
-			<!--  мобильное меню-->
 			<!-- start header-->
 			<header class="header" id="header">
 				<!-- start top-nav-->
 				<div class="top-nav block-with-lazy">
+					<div class="top-nav__bg"><img src="img/@2x/bg-grid.jpg" alt=""/>
+					</div>
 					<div class="container">
-						<ul class="top-nav__nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="/" itemprop="url">Главная</a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Услуги  </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Подбор септика   </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url">Акции </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> О компании  </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> Доставка и оплата </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> Клиентам  </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#" itemprop="url"> Наши работы   </a>
-							</li>
-							<li class="top-nav__item" itemprop="item"><a class="top-nav__link" href="#sContact" itemprop="url">Контакты </a>
-							</li>
-						</ul>
+						<div class="top-nav__row row">
+							<div class="col-auto col-xl-6">
+								<div class="top-nav__logo-block"><a class="top-nav__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
+									<div class="top-nav__logo-txt d-none d-lg-block">
+										Авторизованный сервисный
+										<br/>центр 220 вольт
+									</div>
+								</div>
+								<div class="top-nav__lower-txt d-none d-lg-block">Ремонт сварочного оборудования и электро/бензо инструмента
+								</div>
+							</div>
+							<div class="top-nav__right-col col col-xl-6">
+								<div class="top-nav__shedule-bl d-none d-md-block">
+									<div class="top-nav__address">Пристанский пер. 5г
+									</div>
+									<div class="top-nav__shedule">ПН-ПТ с 9.00 до 18.00
+									</div>
+								</div>
+								<div class="top-nav__contacts">
+									<div class="top-nav__links d-none d-sm-block"><a class="top-nav__phone" href="tel:+73833630011">+7 (383) 363-00-11</a><a class="top-nav__mail" href="mailto:Torus-service@mail.ru">Torus-service@mail.ru</a>
+									</div><a class="top-nav__callback-btn link-modal" href="#modal-call">
+									<svg class="icon icon-phone ">
+										<use xlink:href="img/svg/sprite.svg#phone"></use>
+									</svg><span>Обратный звонок</span></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- end top-nav-->
-				<!-- start topLine-->
-				<section class="topLine section" id="topLine">
+				<!-- start headerBlock-->
+				<div class="headerBlock section bg-wrap" id="headerBlock">
+					<!-- picture-->
+					<picture class="lazy picture-bg"> 
+						<source srcset="#" data-srcset="img/@2x/webp/first-screen-bg.webp" type="image/webp" media="(min-width:576px)"/>
+						<source srcset="#" data-srcset="img/@1x/webp/first-screen-bg.webp" type="image/webp"/>
+						<source srcset="#" data-srcset="img/@2x/first-screen-bg.jpg" type="image/jpg" media="(min-width:576px)"/>
+						<source srcset="#" data-srcset="img/@1x/first-screen-bg.jpg" type="image/jpg"/><img class="object-fit-js" src="#" data-src="img/@2x/first-screen-bg.jpg" alt=""/>
+					</picture>
+					<!-- /picture-->
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>topLine</h2>
+						<div class="headerBlock__wrap">
+							<div class="headerBlock__txt-block">
+								<h1>
+									<div class="headerBlock__big">РЕМОНТ И&nbsp;ПРОКАТ
+									</div>
+									<div class="headerBlock__small">ЭЛЕКТРО / БЕНЗО
+									</div>
+									<div class="headerBlock__white">ИНСТРУМЕНТА
+									</div>
+								</h1>
+							</div>
+							<div class="form">
+								<div class="form-wrap">
+									<form>
+										<input type="hidden" name="example-input-field"/>
+										<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+										<input class="utm_source" type="hidden" name="utm_source"/>
+										<input class="utm_term" type="hidden" name="utm_term"/>
+										<input class="utm_medium" type="hidden" name="utm_medium"/>
+										<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+										<div class="form-wrap__headline">Оставьте заявку
+										</div>
+										<div class="form-wrap__inner-cont">
+											<div class="form-wrap__txt">на бесплатную консультацию специалиста по телефону
+											</div>
+											<div class="form-wrap__input-wrap form-group">
+												<label><input class="form-wrap__input form-control" type="text" placeholder="Ваше имя" name="name" required="required"/>
+													<div class="form-wrap__icon-img"><img src="img/@2x/icon-man.png" alt=""/>
+													</div>
+												</label>
+											</div>
+											<div class="form-wrap__input-wrap form-group">
+												<label><input class="form-wrap__input form-control" type="tel" placeholder="Ваш телефон" name="tel" required="required"/>
+													<div class="form-wrap__icon-img"><img src="img/@2x/icon-phone.png" alt=""/>
+													</div>
+												</label>
+											</div>
+											<button class="form-wrap__btn" type="submit">Отправить
+											</button>
+											<div class="form-wrap__warranty">Гарантируем конфиденциальность
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
 						</div>
-						<div class="row"></div>
 					</div>
-				</section>
-				<!-- end topLine-->
+				</div>
+				<!-- end headerBlock-->
 			</header>
 			<!-- end header-->
-			<div class="container"><a class="link-modal" href="#modal-call" data-title="title" data-text="text  sadasdasd" data-btn="btn sdasdsa" data-order="order  ddfs">modal-call</a><a class="link-modal" href="#modal-call" data-title="title  111" data-text="text  sadasdasd" data-btn="btn sdasdsa" data-order="order  ddfs">modal-call</a>
-				<div class="tabs">
-					<div class="tabs__caption">
-						<div class="tabs__btn btn btn-primary active">btn 1
-						</div>
-						<div class="tabs__btn btn btn-primary">btn 2
-						</div>
-						<div class="tabs__btn btn btn-primary">btn 3
-						</div>
+			<!-- start sRepairment-->
+			<section class="sRepairment section" id="sRepairment">
+				<!-- picture-->
+				<picture class="lazy sRepairment__bg"> 
+					<source srcset="#" data-srcset="img/@2x/webp/sRepairment-bg.webp" type="image/webp" media="(min-width:576px)"/>
+					<source srcset="#" data-srcset="img/@1x/webp/sRepairment-bg.webp" type="image/webp"/>
+					<source srcset="#" data-srcset="img/@2x/sRepairment-bg.jpg" type="image/jpg" media="(min-width:576px)"/>
+					<source srcset="#" data-srcset="img/@1x/sRepairment-bg.jpg" type="image/jpg"/><img src="#" data-src="img/@2x/sRepairment-bg.jpg" alt=""/>
+				</picture>
+				<!-- /picture-->
+				<div class="container">
+					<div class="section-title">
+						<h2>Осуществляем ремонт</h2>
 					</div>
-					<div>
-						<div class="tabs__content active"> content 1
-						</div>
-						<div class="tabs__content">content 2
-						</div>
-						<div class="tabs__content">content 3
-						</div>
-					</div>
-				</div>
-				<div class="tabs">
-					<div class="tabs__caption">
-						<div class="tabs__btn btn btn-primary active">btn 1
-						</div>
-						<div class="tabs__btn btn btn-primary">btn 2
-						</div>
-						<div class="tabs__btn btn btn-primary">btn 3
-						</div>
-					</div>
-					<div>
-						<div class="tabs__content active"> content 1
-						</div>
-						<div class="tabs__content">content 2
-						</div>
-						<div class="tabs__content">content 3
+					<div class="sRepairment__list">
+						<ul>
+							<li>Шуруповертов и дрелей</li>
+							<li>Перфораторов и отбойных молотков</li>
+							<li>УШМ, полировальных и шлифовальных машин</li>
+							<li>Пил и лобзиков</li>
+							<li>Тепловых пушек</li>
+							<li>Компрессоров и генераторов</li>
+							<li>Компрессоров и генераторов</li>
+							<li>Сварочного оборудования</li>
+							<li>Пневмоинструмента</li>
+							<li>Газонокосилок, триммеров и бензопил</li>
+							<li>Культиваторов и мотоблоков</li>
+							<li>Мотопомп и электронасосов</li>
+						</ul>
+						<div class="sRepairment__btn-cont"><a class="sRepairment__btn" href="http://profsvarka.net" target="_blank">Полный перечень товаров и услуг</a>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- start headerBlock-->
-			<div class="headerBlock section" id="headerBlock">
+			</section>
+			<!-- end sRepairment-->
+			<!-- start sAdvantages-->
+			<section class="sAdvantages section" id="sAdvantages">
 				<div class="container">
 					<div class="section-title text-center">
-						<h2>headerBlock ds dfsdfdsfsd</h2>
+						<h2>Наши преимущества</h2>
 					</div>
-					<div class="row"></div>
+					<div class="sAdvantages__row row">
+						<div class="sAdvantages__col col-lg-4">
+							<div class="sAdvantages__item">
+								<div class="sAdvantages__hexagon"><img class="lazy" src="#" data-src="img/@2x/sAdvantages-1.png" alt=""/>
+								</div>
+								<div class="sAdvantages__descr">
+									Скидка
+									<br/>на долгосрочную
+									<br/>аренду инструмента
+								</div>
+							</div>
+						</div>
+						<div class="sAdvantages__col col-lg-4">
+							<div class="sAdvantages__item">
+								<div class="sAdvantages__hexagon"><img class="lazy" src="#" data-src="img/@2x/sAdvantages-2.png" alt=""/>
+								</div>
+								<div class="sAdvantages__descr">Только профессиональный проверенный инструмент Dewalt, Bosch, Makita
+								</div>
+							</div>
+						</div>
+						<div class="sAdvantages__col col-lg-4">
+							<div class="sAdvantages__item">
+								<div class="sAdvantages__hexagon"><img class="lazy" src="#" data-src="img/@2x/sAdvantages-3.png" alt=""/>
+								</div>
+								<div class="sAdvantages__descr">
+									Гарантия до 3-х
+									<br/>месяцев на все
+									<br/>ремонтные работы
+								</div>
+							</div>
+						</div>
+						<div class="sAdvantages__col col-lg-4 offset-lg-2">
+							<div class="sAdvantages__item">
+								<div class="sAdvantages__hexagon"><img class="lazy" src="#" data-src="img/@2x/sAdvantages-4.png" alt=""/>
+								</div>
+								<div class="sAdvantages__descr">
+									Осуществляем доставку
+									<br/>и забор оборудования
+									<br/>с Вашего объекта
+								</div>
+							</div>
+						</div>
+						<div class="sAdvantages__col col-lg-4">
+							<div class="sAdvantages__item">
+								<div class="sAdvantages__hexagon"><img class="lazy" src="#" data-src="img/@2x/sAdvantages-5.png" alt=""/>
+								</div>
+								<div class="sAdvantages__descr">
+									У нас представлен
+									<br/>широкий ассортимент
+									<br/>оборудования
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center"><a class="sAdvantages__btn" href="https://profsvarka.net/" target="_blank">Посмотреть ассортимент оборудования</a>
+					</div>
 				</div>
-			</div>
-			<!-- end headerBlock-->
+			</section>
+			<!-- end sAdvantages-->
+			<!-- start sFeedBack-->
+			<section class="sFeedBack section" id="sFeedBack">
+				<!-- picture-->
+				<picture class="lazy sFeedBack__bg"> 
+					<source srcset="#" data-srcset="img/@2x/webp/sFeedBack-bg.webp" type="image/webp" media="(min-width:576px)"/>
+					<source srcset="#" data-srcset="img/@1x/webp/sFeedBack-bg.webp" type="image/webp"/>
+					<source srcset="#" data-srcset="img/@2x/sFeedBack-bg.jpg" type="image/jpg" media="(min-width:576px)"/>
+					<source srcset="#" data-srcset="img/@1x/sFeedBack-bg.jpg" type="image/jpg"/><img src="#" data-src="img/@2x/sFeedBack-bg.jpg" alt=""/>
+				</picture>
+				<!-- /picture-->
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Отзывы клиентов</h2>
+					</div>
+					<div class="sFeedBack__list">
+						<ul>
+							<li>Хочу выразить огромную благодарность сервису за профессионализм в ремонте электроинструмента Все оперативно и качественно сделано.<br class="d-none d-lg-block"/>Рекомендую!</li>
+							<li>Делал ремонт в офисе, но в самый неподходящий момент сломалась дрель, сам не смог починить. Спецы быстро нашли причину поломки, заменили деталь. Хорошее обслуживание.</li>
+							<li>Хочу написать отзыв. Делал у них сварочный аппарат. Остался доволен. Быстро и качественно, до сих пор использую. В сервисе объяснили как грамотно обращаться, чтобы не сломался в будущем.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- end sFeedBack-->
 			<!-- start sForm-->
-			<section class="sForm section" id="sForm">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>sForm</h2>
+			<section class="sForm section parallax-window" id="sForm" data-parallax="scroll" data-image-src="img/@2x/sForm-bg.jpg">
+				<div class="sForm__container container">
+					<div class="sForm__girl-img d-none d-md-block"><img class="lazy" src="#" data-src="img/@2x/girl-img.png" alt=""/>
 					</div>
-					<div class="row"></div>
+					<div class="sForm__form-cont">
+						<div class="form">
+							<div class="form-wrap">
+								<form>
+									<input type="hidden" name="example-input-field"/>
+									<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+									<input class="utm_source" type="hidden" name="utm_source"/>
+									<input class="utm_term" type="hidden" name="utm_term"/>
+									<input class="utm_medium" type="hidden" name="utm_medium"/>
+									<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+									<div class="form-wrap__headline">Оставьте заявку
+									</div>
+									<div class="form-wrap__inner-cont">
+										<div class="form-wrap__txt">на бесплатную консультацию специалиста по телефону
+										</div>
+										<div class="form-wrap__input-wrap form-group">
+											<label><input class="form-wrap__input form-control" type="text" placeholder="Ваше имя" name="name" required="required"/>
+												<div class="form-wrap__icon-img"><img src="img/@2x/icon-man.png" alt=""/>
+												</div>
+											</label>
+										</div>
+										<div class="form-wrap__input-wrap form-group">
+											<label><input class="form-wrap__input form-control" type="tel" placeholder="Ваш телефон" name="tel" required="required"/>
+												<div class="form-wrap__icon-img"><img src="img/@2x/icon-phone.png" alt=""/>
+												</div>
+											</label>
+										</div>
+										<button class="form-wrap__btn" type="submit">Отправить
+										</button>
+										<div class="form-wrap__warranty">Гарантируем конфиденциальность
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- end sForm-->
-			<!-- start sContact-->
-			<section class="sContact section" id="sContact">
+			<!-- start sWork-->
+			<section class="sWork section" id="sWork">
+				<!-- picture-->
+				<picture class="lazy sWork__bg"> 
+					<source srcset="#" data-srcset="img/@2x/webp/sWorking-bg.webp" type="image/webp" media="(min-width:576px)"/>
+					<source srcset="#" data-srcset="img/@1x/webp/sWorking-bg.webp" type="image/webp"/>
+					<source srcset="#" data-srcset="img/@2x/sWorking-bg.jpg" type="image/jpg" media="(min-width:576px)"/>
+					<source srcset="#" data-srcset="img/@1x/sWorking-bg.jpg" type="image/jpg"/><img src="#" data-src="img/@2x/sWorking-bg.jpg" alt=""/>
+				</picture>
+				<!-- /picture-->
 				<div class="container">
 					<div class="section-title text-center">
-						<h2>sContact</h2>
+						<h2>Как мы работаем</h2>
 					</div>
-					<div class="row"></div>
+					<div class="sWork__row row">
+						<div class="sWork__col col-12 col-md-6 col-lg-3">
+							<div class="sWork__item">
+								<div class="sWork__hexagon"><img class="lazy" src="#" data-src="img/@2x/sWorking-1.png" alt=""/>
+								</div>
+								<div class="sWork__descr">
+									Оставляете заявку
+									<br/>на сайте или звоните
+								</div>
+							</div>
+						</div>
+						<div class="sWork__col col-12 col-md-6 col-lg-3">
+							<div class="sWork__item">
+								<div class="sWork__hexagon"><img class="lazy" src="#" data-src="img/@2x/sWorking-2.png" alt=""/>
+								</div>
+								<div class="sWork__descr">
+									Привозите
+									<br/>инструмент
+									<br/>на диагностику
+								</div>
+							</div>
+						</div>
+						<div class="sWork__col col-12 col-md-6 col-lg-3">
+							<div class="sWork__item">
+								<div class="sWork__hexagon"><img class="lazy" src="#" data-src="img/@2x/sWorking-3.png" alt=""/>
+								</div>
+								<div class="sWork__descr">
+									Договариваемся
+									<br/>по цене и заключаем договор
+								</div>
+							</div>
+						</div>
+						<div class="sWork__col col-12 col-md-6 col-lg-3">
+							<div class="sWork__item">
+								<div class="sWork__hexagon"><img class="lazy" src="#" data-src="img/@2x/sWorking-4.png" alt=""/>
+								</div>
+								<div class="sWork__descr">
+									Осуществляем
+									<br/>ремонт и Вы забираете инструмен
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center"><a class="sWork__btn link-modal" href="#modal-call">Оставить заявку</a>
+					</div>
 				</div>
+			</section>
+			<!-- end sWork-->
+			<!-- start sContact-->
+			<section class="sContact" id="sContact">
+				<div class="sContact__strip">
+					<div class="sContact__header">
+						<div class="sContact__icon"><img class="lazy" src="#" data-src="img/@2x/icon-location.png" alt=""/>
+						</div>
+						<div class="sContact__title">Новосибирск
+						</div>
+					</div>
+					<div class="sContact__item">
+						<div class="sContact__item-title">Ремонт и прокат
+						</div>
+						<div class="sContact__item-address">ул. Пристанский пер. 5г
+						</div><a class="sContact__phone" href="tel:+73833630011">+7 (383) 363-00-11</a>
+					</div>
+				</div>
+				<script charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=FzYWjkr1Zgo6uFWN4Uv8dop2Ve3uZtC5&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
 			</section>
 			<!-- end sContact-->
 			<footer class="footer block-with-lazy">
+				<div class="footer__bg"><img class="lazy" src="" data-src="img/@2x/bg-grid.jpg" alt=""/>
+				</div>
 				<div class="container">
-					<h2>footer</h2>
+					<div class="footer__row row">
+						<div class="col-auto col-lg-4"><a class="footer__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>
+						</div>
+						<div class="col-auto col-lg-4">
+							<div class="footer__all-rights-cont"><a class="footer__mail" href="mailto:Torus-service@mail.ru">Torus-service@mail.ru</a>
+								<div class="footer__all-rights-txt"><span>
+										©
+										</span><span class="year-js">1983</span><span>
+										
+										Все права защищены</span>
+								</div>
+							</div>
+						</div>
+						<div class="footer__tel-col col-auto col-lg-4">
+							<div class="footer__phone-cont"><a class="footer__phone" href="tel:+73833630011">+7 (383) 363-00-11</a><a class="footer__callback-btn link-modal" href="#modal-call">Обратный звонок</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</footer>
 		</div>
 		<!--  start modals-->
 		<div class="modal-win" id="modal-call" style="display: none">
-			<div class="form-wrap">
-				<form>
-					<input type="hidden" name="example-input-field"/>
-					<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
-					<input class="utm_source" type="hidden" name="utm_source"/>
-					<input class="utm_term" type="hidden" name="utm_term"/>
-					<input class="utm_medium" type="hidden" name="utm_medium"/>
-					<input class="utm_campaign" type="hidden" name="utm_campaign"/>
-					<div class="text-center">
-						<div class="form-wrap__title h3 ttu">Обратный звонок
+			<div class="form">
+				<div class="form-wrap">
+					<form>
+						<input type="hidden" name="example-input-field"/>
+						<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+						<input class="utm_source" type="hidden" name="utm_source"/>
+						<input class="utm_term" type="hidden" name="utm_term"/>
+						<input class="utm_medium" type="hidden" name="utm_medium"/>
+						<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+						<div class="form-wrap__headline">Оставьте заявку
 						</div>
-						<p class="after-headline">Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут</p>
-					</div>
-					<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваше Имя" name="text" required="required"/> 
-					</div>
-					<!-- +e.input-wrap-->
-					<button class="form-wrap__btn btn" type="submit"> 
-					</button>
-					<div class="form-wrap__polite">
-						<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-						</label>
-					</div>
-				</form>
+						<div class="form-wrap__inner-cont">
+							<div class="form-wrap__txt">на бесплатную консультацию специалиста по телефону
+							</div>
+							<div class="form-wrap__input-wrap form-group">
+								<label><input class="form-wrap__input form-control" type="text" placeholder="Ваше имя" name="name" required="required"/>
+									<div class="form-wrap__icon-img"><img src="img/@2x/icon-man.png" alt=""/>
+									</div>
+								</label>
+							</div>
+							<div class="form-wrap__input-wrap form-group">
+								<label><input class="form-wrap__input form-control" type="tel" placeholder="Ваш телефон" name="tel" required="required"/>
+									<div class="form-wrap__icon-img"><img src="img/@2x/icon-phone.png" alt=""/>
+									</div>
+								</label>
+							</div>
+							<button class="form-wrap__btn" type="submit">Отправить
+							</button>
+							<div class="form-wrap__warranty">Гарантируем конфиденциальность
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 		<!-- #modal-call-->
+		<div class="form-wrap modal-win modal-form" id="modal-thanks">
+			<form>
+				<input type="hidden" name="example-input-field"/>
+				<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+				<input class="utm_source" type="hidden" name="utm_source"/>
+				<input class="utm_term" type="hidden" name="utm_term"/>
+				<input class="utm_medium" type="hidden" name="utm_medium"/>
+				<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+				<div class="modal-container modal-thanks-cont">
+					<div class="text-center">
+						<div class="form-wrap__img-done"><img src="img/@2x/done.png" alt=""/>
+						</div>
+						<div class="form-wrap__title h3 ttu">ВАША ЗАЯВКА ПРИНЯТА!
+						</div>
+						<p class="after-headline">Скоро с Вами свяжутся!</p>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--#modal thanks-->
 		<!-- end modals-->
 		<script src="js/lazy.js"></script>
 		<script src="libs/jquery/jquery.min.js"></script>
@@ -207,6 +466,8 @@
 		<script src="libs/swiper/js/swiper.min.js"></script>
 		<!-- /slider libs-->
 		<script src="libs/inputmask/inputmask.min.js"></script>
+		<!--parallax-->
+		<script src="js/parallax.min.js"></script>
 		<script src="js/common.js"></script>
 	</body>
 </html>

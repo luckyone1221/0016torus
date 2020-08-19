@@ -1,7 +1,10 @@
 .modal-win {
 	// display: block;
-	width: 100%;
+	//width: 100%;
+	width: auto;
 	position: relative;
+	padding: 0;
+	border-radius: $border-radius;
 
 	.modal-content {
 		// max-width: 485px;
@@ -87,6 +90,11 @@ a {
 			display: none;
 		}
 	}
+}
+
+
+.fancybox-button.fancybox-close-small{
+
 }
 
 

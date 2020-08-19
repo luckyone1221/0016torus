@@ -1,9 +1,16 @@
 mixin sContact()
 	// start sContact
-	+b.SECTION.sContact.section#sContact&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 sContact
-				
-			.row
+	+b.SECTION.sContact#sContact&attributes(attributes)
+		//-+e.container.container
+		+e.strip
+			+e.header
+				+e.icon
+					img.lazy(src="#" data-src="img/@2x/icon-location.png" alt="")
+				+e.title Новосибирск
+			+e.item
+				+e.item-title Ремонт и прокат
+				+e.item-address ул. Пристанский пер. 5г
+				+e.A.phone(href='tel:+73833630011') +7 (383) 363-00-11
+		script(charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=FzYWjkr1Zgo6uFWN4Uv8dop2Ve3uZtC5&width=100%&height=500&lang=ru_RU&sourceType=constructor&scroll=false')
+
 	// end sContact

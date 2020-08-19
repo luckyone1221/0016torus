@@ -172,6 +172,7 @@ const JSCCommon = {
 				type: 'POST',
 				data: data,
 			}).done(function (data) {
+				console.log('success');
 
 				$.fancybox.close();
 				$.fancybox.open({
@@ -186,7 +187,9 @@ const JSCCommon = {
 					// ym(53383120, 'reachGoal', 'zakaz');
 					// yaCounter55828534.reachGoal('zakaz');
 				}, 4000);
-			}).fail(function () { });
+			}).fail(function () {
+				console.log('something went wrong')
+			});
 
 		});
 	},
@@ -295,6 +298,14 @@ function eventHandler() {
 	});
 	// modal window
 
+
+	//luckyoneJs
+
+	//footer year
+	$('.year-js').html(new Date().getFullYear());
+
+
+	//end luckyoneJs
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

@@ -1,0 +1,122 @@
+// start .sAdvantages
+.sAdvantages {
+	background-image: url(../img/@2x/bg-instruments.jpg);
+	background-size: 180px;
+	background-repeat: repeat;
+
+	--sPT: #{rem(35)};
+	--sPB: #{rem(40)};
+	--sTPB: #{rem(25)};
+	@include media-breakpoint-up(lg){
+		--sPT: #{rem(65)};
+		--sPB: #{rem(80)};
+		--sTPB: #{rem(55)};
+	}
+
+	.section-title{
+		h2{
+
+		}
+	}
+
+	//
+	&__row{
+
+	}
+	&__col{
+		margin-bottom: rem(30);
+		@include media-breakpoint-up(lg){
+			margin-bottom: rem(60);
+		}
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		text-align: left;
+		@include media-breakpoint-up(lg){
+			display: block;
+			text-align: center;
+		}
+	}
+	&__hexagon{
+		flex-shrink: 0;
+		margin-right: 20px;
+		@include media-breakpoint-up(lg){
+			margin: 0 auto 20px auto;
+		}
+
+		width: rem(100px);
+		height: rem(100px);
+		@include media-breakpoint-up(md){
+			width: rem(135px);
+			height: rem(135px);
+		}
+
+		clip-path: polygon(50% 0, 50% 0, 100% 30%, 100% 70%, 50% 100%, 50% 100%, 0% 70%, 0% 30%);
+		background-color: $white;
+
+		display: flex;
+		img{
+			max-width: 55%;
+			max-height: 55%;
+			@include media-breakpoint-up(md){
+				max-width: 70%;
+				max-height: 70%;
+			}
+			width: auto;
+			height: auto;
+			margin: auto;
+		}
+	}
+	&__descr{
+		font-size: rem(21);
+
+		br{
+			display: none;
+		}
+		@include media-breakpoint-up(lg){
+			br{
+				display: block;
+			}
+		}
+	}
+	&__btn{
+		@extend .btn;
+		@extend .btn-danger;
+
+		width: 100%;
+		max-width: 455px;
+		padding: rem(24px) rem(15);
+
+		@include media-breakpoint-up(md){
+			font-size: rem(20);
+		}
+	}
+
+	&__{}
+	&__{}
+	&__{}
+	&__{}
+	&__{}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+
+} // end.sAdvantages

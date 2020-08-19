@@ -1,7 +1,97 @@
+// start .sContact
+.sContact {
+	position: relative;
+	--sPT: #{rem(0)};
+	--sPB: #{rem(0)};
+	--sTPB: #{rem(0)};
 
-	// start .sContact
-	.sContact {
-		 
+	& > ymaps{
+		z-index: 1;
+		@include media-breakpoint-down(lg){
+			height: rem(370px) !important;
+		}
+	}
+
+	&__container{
+		@include media-breakpoint-up(lg){
+			//position: relative;
+			//z-index: 2;
+		}
+	}
+	&__strip{
+		padding: 20px 15px ;
+		@include media-breakpoint-up(sm){
+			padding: rem(30);
+		}
+		@include media-breakpoint-up(lg){
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			padding: rem(50) rem(30) rem(30) rem(30);
+			width: 350px;
+			right: 0;
+		}
+		@include media-breakpoint-up(xxl){
+			right: 10.4vw;
+		}
+
+		height: 100%;
+		background-color: rgba($white, .9);
+	}
+
+	//header
+	&__header{
+		display: flex;
+		align-items: center;
+		margin-bottom: rem(20);
+		@include media-breakpoint-up(lg){
+			display: block;
+			margin-bottom: 0;
+		}
+	}
+	&__icon{
+		width: 34px;
+		height: 34px;
+		display: flex;
+
+		margin-right: 20px;
+		@include media-breakpoint-up(lg){
+			margin-bottom: 10px;
+			margin-right: 0px;
+		}
+
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			width: auto;
+			height: auto;
+			margin: auto;
+		}
+	}
+	&__title{
+		font-weight: 800;
+
+		@include media-breakpoint-up(lg){
+			margin-bottom: rem(25px);
+		}
+		font-size: rem(35);
+	}
+	&__item{
+		margin-bottom: rem(20px);
+	}
+	&__item-title{
+		font-size: rem(17);
+		color: $primary;
+		margin-bottom: rem(8);
+	}
+	&__item-address{
+		font-size: rem(21px);
+	}
+	&__phone{
+		font-size: rem(21px);
+	}
+	&__{}
+
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

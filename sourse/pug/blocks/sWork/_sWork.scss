@@ -1,0 +1,132 @@
+// start .sWork
+.sWork {
+	position: relative;
+	z-index: 1;
+	color: $white;
+
+	--sPT: #{rem(40)};
+	--sPB: #{rem(40)};
+	--sTPB: #{rem(20)};
+	@include media-breakpoint-up(lg){
+		--sPT: #{rem(70)};
+		--sPB: #{rem(75)};
+		--sTPB: #{rem(35)};
+	}
+
+	&__bg{
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+
+	&__row{
+
+	}
+	&__col{
+		margin-bottom: rem(30);
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		text-align: left;
+		@include media-breakpoint-up(md){
+			display: block;
+			text-align: center;
+		}
+	}
+	&__hexagon{
+		flex-shrink: 0;
+		margin-right: 20px;
+		@include media-breakpoint-up(md){
+			margin: 0 auto 20px auto;
+		}
+
+		width: rem(100px);
+		height: rem(100px);
+		@include media-breakpoint-up(md){
+			width: rem(135px);
+			height: rem(135px);
+		}
+		@include media-breakpoint-up(xl){
+			width: rem(160px);
+			height: rem(160px);
+		}
+
+		clip-path: polygon(50% 0, 50% 0, 100% 30%, 100% 70%, 50% 100%, 50% 100%, 0% 70%, 0% 30%);
+		background-color: $white;
+
+		display: flex;
+		img{
+			max-width: 55%;
+			max-height: 55%;
+			@include media-breakpoint-up(md){
+				max-width: 70%;
+				max-height: 70%;
+			}
+			width: auto;
+			height: auto;
+			margin: auto;
+		}
+	}
+	&__descr{
+		font-size: rem(21);
+
+		br{
+			display: none;
+		}
+		@include media-breakpoint-up(lg){
+			max-width: 210px;
+			br{
+				display: block;
+			}
+		}
+	}
+	&__btn{
+		@extend .btn;
+		@extend .btn-danger;
+
+		width: 100%;
+		max-width: 455px;
+		padding: rem(24px) rem(15);
+
+		@include media-breakpoint-up(md){
+			font-size: rem(20);
+		}
+	}
+	&__{}
+	&__{}
+	&__{}
+	&__{}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+
+} // end.sWork

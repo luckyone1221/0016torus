@@ -1,0 +1,45 @@
+mixin sWork()
+	// start sWork
+	+b.SECTION.sWork.section#sWork&attributes(attributes)
+		+pic('sWorking-bg.jpg')(class='sWork__bg')
+		.container
+			+b.section-title.text-center
+				h2 Как мы работаем
+			+e.row.row
+				+e.col.col-12.col-md-6.col-lg-3
+					+workItem(1)
+						| Оставляете заявку
+						|
+						br
+						| на сайте или звоните
+				+e.col.col-12.col-md-6.col-lg-3
+					+workItem(2)
+						| Привозите
+						|
+						br
+						| инструмент
+						|
+						br
+						| на диагностику
+				+e.col.col-12.col-md-6.col-lg-3
+					+workItem(3)
+						| Договариваемся
+						|
+						br
+						| по цене и заключаем договор
+				+e.col.col-12.col-md-6.col-lg-3
+					+workItem(4)
+						| Осуществляем
+						|
+						br
+						| ремонт и Вы забираете инструмен
+			.text-center
+				+e.A.btn.link-modal(href="#modal-call") Оставить заявку
+	// end sWork
+
+mixin workItem(imgNum)
+	+e.item
+		+e.hexagon
+			img.lazy(src="#" data-src=`img/@2x/sWorking-${imgNum}.png` alt="")
+		+e.descr
+			block

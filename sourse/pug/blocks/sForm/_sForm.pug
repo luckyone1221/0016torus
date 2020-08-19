@@ -1,9 +1,10 @@
 mixin sForm()
 	// start sForm
-	+b.SECTION.sForm.section#sForm&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 sForm
-				
-			.row
+	+b.SECTION.sForm.section#sForm(class="parallax-window" data-parallax="scroll" data-image-src="img/@2x/sForm-bg.jpg" )&attributes(attributes)
+		//-+pic('sFeedBack-bg.jpg')(class="sForm__bg")
+		+e.container.container
+			+e.girl-img.d-none.d-md-block
+				img.lazy(src="#" data-src="img/@2x/girl-img.png" alt="")
+			+e.form-cont
+				+form()
 	// end sForm

@@ -1,0 +1,56 @@
+mixin sAdvantages()
+	// start sAdvantages
+	+b.SECTION.sAdvantages.section#sAdvantages&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Наши преимущества
+			+e.row.row
+				+e.col.col-lg-4
+					+advantageItem(1)
+						| Скидка
+						|
+						br
+						| на долгосрочную
+						|
+						br
+						| аренду инструмента
+				+e.col.col-lg-4
+					+advantageItem(2)
+						| Только профессиональный проверенный инструмент Dewalt, Bosch, Makita
+				+e.col.col-lg-4
+					+advantageItem(3)
+						| Гарантия до 3-х
+						|
+						br
+						| месяцев на все
+						|
+						br
+						| ремонтные работы
+				+e.col.col-lg-4.offset-lg-2
+					+advantageItem(4)
+						| Осуществляем доставку
+						|
+						br
+						| и забор оборудования
+						|
+						br
+						| с Вашего объекта
+				+e.col.col-lg-4
+					+advantageItem(5)
+						| У нас представлен
+						|
+						br
+						| широкий ассортимент
+						|
+						br
+						|оборудования
+			.text-center
+				+e.A.btn(href="https://profsvarka.net/" target="_blank") Посмотреть ассортимент оборудования
+	// end sAdvantages
+
+mixin advantageItem(imgNum)
+	+e.item
+		+e.hexagon
+			img.lazy(src="#" data-src=`img/@2x/sAdvantages-${imgNum}.png` alt="")
+		+e.descr
+			block

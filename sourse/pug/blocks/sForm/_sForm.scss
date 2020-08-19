@@ -1,7 +1,60 @@
+// start .sForm
+.sForm {
+	position: relative;
+	z-index: 2;
 
-	// start .sForm
-	.sForm {
-		 
+	--sPT: #{0};
+	--sPB: #{0};
+	--sTPB: #{0};
+
+	/*--sPT: #{rem(40)};
+	--sPB: #{rem(30)};
+	--sTPB: #{rem(20)};
+	@include media-breakpoint-up(lg){
+		--sPT: #{rem(80)};
+		--sPB: #{rem(60)};
+		--sTPB: #{rem(40)};
+	}*/
+
+	//
+	&__container{
+		@include media-breakpoint-up(lg){
+			position: relative;
+		}
+
+		padding-top: rem(30);
+		padding-bottom: rem(25);
+		@include media-breakpoint-up(lg){
+			padding-top: rem(80);
+			padding-bottom: rem(50);
+		}
+	}
+	&__girl-img{
+		position: absolute;
+		top: 0;
+		left: -110px;
+		@include media-breakpoint-up(lg){
+			left: 0;
+		}
+		width: calc(100% - 400px);
+		height: 100%;
+		img{
+			height: 100%;
+			width: auto;
+		}
+	}
+	.form{
+		@include media-breakpoint-up(md){
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+	&__{}
+	&__{}
+	&__{}
+	&__{}
+	&__{}
+
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
