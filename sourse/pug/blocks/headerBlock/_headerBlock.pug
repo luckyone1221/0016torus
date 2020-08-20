@@ -1,7 +1,12 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section.bg-wrap#headerBlock&attributes(attributes)
-		+pic('first-screen-bg.jpg', 'bg')(class="picture-bg")
+	+b.headerBlock.section#headerBlock&attributes(attributes)
+		//-+pic('first-screen-bg.jpg', 'bg')(class="picture-bg")
+		+e.bg
+			+e.left-bg.left-bg-js
+				img(src="img/@2x/left-bg.jpg" alt="")
+			+e.right-bg.right-bg-js.d-none.d-lg-block
+				img(src="img/@2x/right-bg.jpg" alt="")
 		.container
 			+e.wrap
 				+e.txt-block

@@ -295,7 +295,27 @@ function eventHandler() {
 	//luckyoneJs
 	//footer year
 
-	$('.year-js').html(new Date().getFullYear()); //end luckyoneJs
+	$('.year-js').html(new Date().getFullYear()); //header magic
+
+	$('.headerBlock').mousemove(function () {
+		if (event.clientX > vw(50)) {
+			$('.right-bg-js').addClass('hover');
+			$('.left-bg-js').removeClass('hover');
+		} else {
+			$('.left-bg-js').addClass('hover');
+			$('.right-bg-js').removeClass('hover');
+		}
+	});
+	$('.headerBlock').mouseleave(function () {
+		$('.left-bg-js').removeClass('hover');
+		$('.right-bg-js').removeClass('hover');
+	});
+
+	function vw(v) {
+		var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+		return v * w / 100;
+	} //end luckyoneJs
+
 }
 
 ;

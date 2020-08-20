@@ -48,11 +48,12 @@
 		width: rem(100px);
 		height: rem(100px);
 		@include media-breakpoint-up(md){
-			width: rem(135px);
-			height: rem(135px);
+			width: rem(120px);
+			height: rem(120px);
 		}
 
-		clip-path: polygon(50% 0, 50% 0, 100% 30%, 100% 70%, 50% 100%, 50% 100%, 0% 70%, 0% 30%);
+		//clip-path: polygon(50% 0, 50% 0, 100% 30%, 100% 70%, 50% 100%, 50% 100%, 0% 70%, 0% 30%);
+		border-radius: 50%;
 		background-color: $white;
 
 		display: flex;
@@ -60,8 +61,8 @@
 			max-width: 55%;
 			max-height: 55%;
 			@include media-breakpoint-up(md){
-				max-width: 70%;
-				max-height: 70%;
+				max-width: 90%;
+				max-height: 90%;
 			}
 			width: auto;
 			height: auto;

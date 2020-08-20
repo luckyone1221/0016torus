@@ -29,8 +29,6 @@
 			<header class="header" id="header">
 				<!-- start top-nav-->
 				<div class="top-nav block-with-lazy">
-					<div class="top-nav__bg"><img src="img/@2x/bg-grid.jpg" alt=""/>
-					</div>
 					<div class="container">
 						<div class="top-nav__row row">
 							<div class="col-auto col-xl-6">
@@ -63,15 +61,13 @@
 				</div>
 				<!-- end top-nav-->
 				<!-- start headerBlock-->
-				<div class="headerBlock section bg-wrap" id="headerBlock">
-					<!-- picture-->
-					<picture class="lazy picture-bg"> 
-						<source srcset="#" data-srcset="img/@2x/webp/first-screen-bg.webp" type="image/webp" media="(min-width:576px)"/>
-						<source srcset="#" data-srcset="img/@1x/webp/first-screen-bg.webp" type="image/webp"/>
-						<source srcset="#" data-srcset="img/@2x/first-screen-bg.jpg" type="image/jpg" media="(min-width:576px)"/>
-						<source srcset="#" data-srcset="img/@1x/first-screen-bg.jpg" type="image/jpg"/><img class="object-fit-js" src="#" data-src="img/@2x/first-screen-bg.jpg" alt=""/>
-					</picture>
-					<!-- /picture-->
+				<div class="headerBlock section" id="headerBlock">
+					<div class="headerBlock__bg">
+						<div class="headerBlock__left-bg left-bg-js"><img src="img/@2x/left-bg.jpg" alt=""/>
+						</div>
+						<div class="headerBlock__right-bg right-bg-js d-none d-lg-block"><img src="img/@2x/right-bg.jpg" alt=""/>
+						</div>
+					</div>
 					<div class="container">
 						<div class="headerBlock__wrap">
 							<div class="headerBlock__txt-block">
@@ -374,8 +370,6 @@
 			</section>
 			<!-- end sContact-->
 			<footer class="footer block-with-lazy">
-				<div class="footer__bg"><img class="lazy" src="" data-src="img/@2x/bg-grid.jpg" alt=""/>
-				</div>
 				<div class="container">
 					<div class="footer__row row">
 						<div class="col-auto col-lg-4"><a class="footer__logo" href="/"><img src="img/@2x/logo.png" alt=""/></a>

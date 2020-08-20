@@ -11,7 +11,8 @@
 		padding: rem(15px) 0;
 	}
 
-	&__bg{
+	background-color: $white;
+	/*&__bg{
 		position: absolute;
 		z-index: -1;
 		top: 0;
@@ -24,7 +25,8 @@
 			height: 100%;
 			object-fit: cover;
 		}
-	}
+	}*/
+
 
 	&__row{
 		@include media-breakpoint-down(sm){

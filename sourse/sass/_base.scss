@@ -416,11 +416,15 @@ iframe {
 a{
 	color: $body-color;
 	&:hover{
-		color: darken($primary, 15);
+		color: darken($danger, 1);
 	}
 }
 
 //frames
+.btn-danger{
+	color: $white;
+}
+
 .btn-danger-outlined{
 	background-color: $white;
 	color: $body-color;
