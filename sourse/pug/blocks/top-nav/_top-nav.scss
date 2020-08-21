@@ -48,6 +48,10 @@
 		margin-right: rem(15px);
 		img{
 			width: rem(200px);
+
+			@include media-breakpoint-up(lg){
+				width: rem(250px);
+			}
 			height: auto;
 		}
 	}

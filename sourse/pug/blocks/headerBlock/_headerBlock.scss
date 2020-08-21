@@ -143,6 +143,10 @@
 		@include media-breakpoint-up(lg){
 			font-size: rem(43);
 		}
+
+		&.white{
+			color: $white;
+		}
 	}
 	&__white{
 		font-size: rem(33);
